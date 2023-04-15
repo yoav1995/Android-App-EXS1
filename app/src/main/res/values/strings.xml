@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EXS1</string>
+    <string name="Button_Left">myLeftButton</string>
+    <string name="Button_right">myRightButton</string>
+    <string name="car">myCar</string>
+    <string name="rock">rockMonster</string>
+    <string name="heart">myHeart</string>
+</resources>

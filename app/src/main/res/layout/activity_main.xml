@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/road_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/hearts_layout"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end|top"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hearts_icon"
+            android:contentDescription="@string/heart"/>
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            app:srcCompat="@drawable/hearts_icon"
+            android:contentDescription="@string/heart"/>
+
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hearts_icon"
+            android:contentDescription="@string/heart"/>
+
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/background_grid"
+        android:layout_width="match_parent"
+        android:layout_height="1478dp"
+        android:layout_marginTop="50dp"
+        android:columnCount="3"
+        android:rowCount="8">
+
+        <!-- Row 1 -->
+        <ImageView
+            android:id="@+id/stoneR1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <!-- Row 2 -->
+        <ImageView
+            android:id="@+id/stoneR2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <ImageView
+            android:id="@+id/stoneR21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <!-- Row 3 -->
+
+        <ImageView
+            android:id="@+id/stoneR3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <ImageView
+            android:id="@+id/stoneR31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR32"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <!-- Row 4 -->
+        <ImageView
+            android:id="@+id/stoneR4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <ImageView
+            android:id="@+id/stoneR41"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR42"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <!-- Row 5 -->
+        <ImageView
+            android:id="@+id/stoneR5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <ImageView
+            android:id="@+id/stoneR51"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR52"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <!-- Row 6 -->
+        <ImageView
+            android:id="@+id/stoneR6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+        <ImageView
+            android:id="@+id/stoneR61"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR62"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <!-- Row 7 -->
+
+        <ImageView
+            android:id="@+id/myCar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/car_black"
+            android:contentDescription="@string/car"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageView
+            android:id="@+id/myCar2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/car_black"
+            android:contentDescription="@string/car"
+            android:scaleType="fitCenter"
+            />
+        <ImageView
+            android:id="@+id/myCar3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/car_black"
+            android:contentDescription="@string/car"
+            android:scaleType="fitCenter"
+            />
+
+
+        <!--
+      <ImageView
+          android:id="@+id/myCar2"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_row="6"
+          android:layout_column="2"
+          android:layout_columnWeight="1"
+          android:layout_rowWeight="1"
+          android:background="@android:color/transparent"
+          android:src="@drawable/car_black"
+          android:scaleType="fitCenter"
+          android:contentDescription="@string/car"/>
+
+      -->
+        <!-- Row 8 -->
+
+        <ImageButton
+            android:id="@+id/myLeftButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/Button_Left"
+            android:scaleType="centerInside"
+            android:src="@drawable/left_arrow" />
+
+        <ImageButton
+            android:id="@+id/myRightButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/Button_right"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+    </GridLayout>
+
+
+
+</RelativeLayout>
