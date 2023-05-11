@@ -13,15 +13,34 @@ import java.util.ArrayList;
 
 public class GameManager {
     private final int regScore = 10;
+    private int score;
+    private int life;
 
 
 
 
-    public GameManager() {
 
+    public GameManager(int life) {
+        this.life = life;
+        this.score = 0;
     }
 
-    public void crash(Context context,Vibrator v)
+    public int getLife() {
+        return life;
+    }
+
+    public void setLife(int life) {
+        this.life = life;
+    }
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public void crash(Context context, Vibrator v)
     {
         //Toast.makeText(context,":-( no! the rocks hit you!",Toast.LENGTH_LONG).show();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -31,6 +50,16 @@ public class GameManager {
             v.vibrate(150);
         }
 
+        /// updating score when crashing
+     if(getScore()>500)
+     {
+         setScore(getScore()-400);
+     } else if (getScore()<500&& getScore()>150) {
+         setScore(getScore()-150);
+     }
+     else {
+         setScore(getScore()-50);
+     }
     }
 
 

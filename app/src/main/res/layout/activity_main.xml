@@ -5,8 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@drawable/road_background"
+    android:background="@drawable/road_background2"
     tools:context=".MainActivity">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="-20dp"
+        android:text="0000"
+        android:textSize="50sp" />
 
     <LinearLayout
         android:id="@+id/hearts_layout"
@@ -15,7 +27,9 @@
         android:layout_gravity="end|top"
         android:layout_centerHorizontal="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        >
 
         <ImageView
             android:id="@+id/heart1"
@@ -51,10 +65,13 @@
         android:layout_width="match_parent"
         android:layout_height="1478dp"
         android:layout_marginTop="50dp"
-        android:columnCount="3"
-        android:rowCount="8">
+        android:columnCount="5"
+        android:rowCount="10">
+
+        <!-- Stones -->
 
         <!-- Row 1 -->
+
         <ImageView
             android:id="@+id/stoneR1"
             android:layout_width="0dp"
@@ -84,6 +101,29 @@
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
             android:layout_columnWeight="1"
             android:contentDescription="@string/rock"
             android:src="@drawable/my_rock" />
@@ -121,6 +161,30 @@
             android:layout_columnWeight="1"
             android:contentDescription="@string/rock"
             android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR24"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
         <!-- Row 3 -->
 
         <ImageView
@@ -155,6 +219,33 @@
             android:layout_columnWeight="1"
             android:contentDescription="@string/rock"
             android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR33"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR34"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+
+
         <!-- Row 4 -->
         <ImageView
             android:id="@+id/stoneR4"
@@ -188,6 +279,29 @@
             android:layout_columnWeight="1"
             android:contentDescription="@string/rock"
             android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR43"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR44"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
         <!-- Row 5 -->
         <ImageView
             android:id="@+id/stoneR5"
@@ -222,6 +336,30 @@
             android:contentDescription="@string/rock"
             android:src="@drawable/my_rock" />
 
+        <ImageView
+            android:id="@+id/stoneR53"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR54"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
         <!-- Row 6 -->
         <ImageView
             android:id="@+id/stoneR6"
@@ -255,14 +393,114 @@
             android:layout_columnWeight="1"
             android:contentDescription="@string/rock"
             android:src="@drawable/my_rock" />
-
-        <!-- Row 7 -->
+        <ImageView
+            android:id="@+id/stoneR63"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
 
         <ImageView
-            android:id="@+id/myCar"
+            android:id="@+id/stoneR64"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <!-- Row 7 -->
+        <ImageView
+            android:id="@+id/stoneR7"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+        <ImageView
+            android:id="@+id/stoneR71"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR72"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR73"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+        <ImageView
+            android:id="@+id/stoneR74"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/rock"
+            android:src="@drawable/my_rock" />
+
+
+
+        <!-- Coins -->
+
+
+        <!-- cars -->
+
+        <!-- Row 8 -->
+
+        <ImageView
+            android:id="@+id/myCarleft2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/car_black"
+            android:contentDescription="@string/car"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageView
+            android:id="@+id/myCarleft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
@@ -271,25 +509,11 @@
             android:contentDescription="@string/car"
             android:scaleType="fitCenter"
             />
-
         <ImageView
-            android:id="@+id/myCar2"
+            android:id="@+id/myCar"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_row="6"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:background="@android:color/transparent"
-            android:src="@drawable/car_black"
-            android:contentDescription="@string/car"
-            android:scaleType="fitCenter"
-            />
-        <ImageView
-            android:id="@+id/myCar3"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_row="6"
+            android:layout_row="7"
             android:layout_rowWeight="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
@@ -297,35 +521,45 @@
             android:src="@drawable/car_black"
             android:contentDescription="@string/car"
             android:scaleType="fitCenter"
+            tools:ignore="TooManyViews" />
+        <ImageView
+            android:id="@+id/myCarRight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/car_black"
+            android:contentDescription="@string/car"
+            android:scaleType="fitCenter"
             />
 
-
-        <!--
-      <ImageView
-          android:id="@+id/myCar2"
-          android:layout_width="0dp"
-          android:layout_height="0dp"
-          android:layout_row="6"
-          android:layout_column="2"
-          android:layout_columnWeight="1"
-          android:layout_rowWeight="1"
-          android:background="@android:color/transparent"
-          android:src="@drawable/car_black"
-          android:scaleType="fitCenter"
-          android:contentDescription="@string/car"/>
-
-      -->
-        <!-- Row 8 -->
+        <ImageView
+            android:id="@+id/myCarRight2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/car_black"
+            android:contentDescription="@string/car"
+            android:scaleType="fitCenter"
+            />
+        <!-- Row 9 -->
 
         <ImageButton
             android:id="@+id/myLeftButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_row="7"
+            android:layout_row="8"
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:background="@android:color/transparent"
+            android:background="@color/material_dynamic_neutral50"
             android:contentDescription="@string/Button_Left"
             android:scaleType="centerInside"
             android:src="@drawable/left_arrow" />
@@ -334,16 +568,571 @@
             android:id="@+id/myRightButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_row="8"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:background="@color/material_dynamic_neutral50"
+            android:contentDescription="@string/Button_right"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+    </GridLayout>
+
+    <!-- coins -->
+    <GridLayout
+        android:id="@+id/coins_grid"
+        android:layout_width="match_parent"
+        android:layout_height="1478dp"
+        android:layout_marginTop="50dp"
+        android:columnCount="5"
+        android:rowCount="10">
+
+        <!-- Row 1 -->
+
+        <ImageView
+            android:id="@+id/coinR1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+        <!-- Row 2 -->
+
+        <ImageView
+            android:id="@+id/coinR2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR24"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+        <!-- Row 3-->
+
+        <ImageView
+            android:id="@+id/coinR3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR32"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR33"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR34"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+
+        <!-- Row 4-->
+
+        <ImageView
+            android:id="@+id/coinR4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR41"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR42"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR43"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR44"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+
+
+        <!-- Row 5-->
+
+        <ImageView
+            android:id="@+id/coinR5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR51"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR52"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR53"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR54"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+        <!-- Row 6-->
+
+        <ImageView
+            android:id="@+id/coin6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR61"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR62"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR63"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR64"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+        <!-- Row 7-->
+
+        <ImageView
+            android:id="@+id/coinR7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR71"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR72"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR73"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR74"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+
+
+        <!-- Row 7-->
+
+        <ImageView
+            android:id="@+id/coinR8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR81"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR82"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_row="7"
             android:layout_rowWeight="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/Button_right"
-            android:scaleType="centerInside"
-            android:src="@drawable/right_arrow" />
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR83"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR84"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
+
+        <!-- Row 8-->
+
+        <ImageView
+            android:id="@+id/coinR9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="8"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+        <ImageView
+            android:id="@+id/coinR91"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="8"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:visibility="invisible"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR92"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="8"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/myCoin"
+            android:visibility="invisible"
+            android:src="@drawable/coin_svg"  />
+
+        <ImageView
+            android:id="@+id/coinR93"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="8"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg" />
+
+
+        <ImageView
+            android:id="@+id/coinR94"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="8"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:visibility="invisible"
+            android:contentDescription="@string/myCoin"
+            android:src="@drawable/coin_svg"  />
+
     </GridLayout>
-
-
 
 </RelativeLayout>

@@ -5,4 +5,18 @@
     <string name="car">myCar</string>
     <string name="rock">rockMonster</string>
     <string name="heart">myHeart</string>
+    <string name="coin">myCoin</string>
+    <string name="myCoin">myCoin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="play">Play!</string>
+    <string name="sensors">Sensors:</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="welcome_to_my_rock_game">Welcome To My Rock Game</string>
+    <string name="highscores_list">Highscores List</string>
+    <string name="name_input" />
+    <string name="speed">Fast Mode:</string>
+    <string name="enter_your_name_here">Enter Your Name Here</string>
 </resources>
