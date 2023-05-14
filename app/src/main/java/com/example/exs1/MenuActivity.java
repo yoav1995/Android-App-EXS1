@@ -67,7 +67,6 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
-                   // getHighScores().add(new HighScore().setRankTitle(userNameTXT.getText().toString()).setScore(0));
                     return true;
                 }
                 return false;
@@ -78,6 +77,7 @@ public class MenuActivity extends AppCompatActivity {
         Intent myIntent = new Intent(this, MainActivity.class);
         myIntent.putExtra(MainActivity.KEY_SENSOR,sensorsButton.isChecked());
         myIntent.putExtra(MainActivity.KEY_SPEED,speedButton.isChecked());
+        myIntent.putExtra(MainActivity.KEY_NAME, userNameTXT.getText().toString());
         startActivity(myIntent);
     }
     private void openHiScoreScreen() {

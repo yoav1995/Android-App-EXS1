@@ -3,28 +3,26 @@ package com.example.exs1;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-//import android.util.Log;
+import android.os.Vibrator;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.Random;
 
-import android.os.Vibrator;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.exs1.Interfaces.StepCallback;
-import com.example.exs1.Utilities.SignalGen;
 import com.example.exs1.Logic.GameManager;
+import com.example.exs1.Utilities.SignalGen;
 import com.example.exs1.Utilities.StepDetector;
 import com.google.android.material.textview.MaterialTextView;
+
+import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -51,9 +49,12 @@ public class MainActivity extends AppCompatActivity {
     private StepDetector stepDetector;
     public static final String KEY_SENSOR = "KEY_SENSOR";
     public static final String KEY_SPEED = "KEY_SPEED";
+    public static final String KEY_NAME = "KEY_NAME";
+    public static final String KEY_SCORE = "KEY_SCORE";
     private Boolean sensorsChecked,speedChecked;
     private enum Speed {FAST,NORMAL};
     private long speed;
+    private String name="";
 
 
     @Override
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         speedChecked=previousIntent.getBooleanExtra(KEY_SPEED,false);
         findViews();
         gameManager=new GameManager(3);
+        name= previousIntent.getStringExtra(KEY_NAME);
         switch (chosenSpeed(speedChecked)){
             case FAST:
                 speed=700;
@@ -201,8 +203,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 runOnUiThread(() -> {
-                            if (gameManager.getLife() <= 0)
+                            if (gameManager.getLife() <= 0) {
                                 this.cancel(); // stopping the game after 3 collisions
+                                openHighScoreScreen();
+                            }
                             else {
                                 for (int i = 6; i >= 0; i--) {
                                     for (int j = 0; j < 5; j++) {
@@ -319,6 +323,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
+
+    private void openHighScoreScreen() {
+        Intent nextIntent = new Intent(this, HighscoreActivity.class);
+        nextIntent.putExtra(MainActivity.KEY_NAME,name);
+        nextIntent.putExtra(MainActivity.KEY_SCORE,gameManager.getScore());
+        startActivity(nextIntent);
+
+    }
+
     @SuppressLint("SetTextI18n")
     private void crashed(int i , int j)
     {
@@ -392,6 +405,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 
 
 
