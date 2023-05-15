@@ -1,4 +1,5 @@
 package com.example.exs1.Adapters;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -6,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.exs1.Interfaces.CoordinateCallBack;
 import com.example.exs1.Interfaces.HighScoreCallBack;
 import com.example.exs1.Models.HighScore;
 import com.example.exs1.R;
@@ -21,9 +23,18 @@ public class HighscoreAdapter extends  RecyclerView.Adapter<HighscoreAdapter.Hig
     }
 
     private HighScoreCallBack highScoreCallBack;
+    private CoordinateCallBack coordinateCallBack;
 
     public void setHighScoreCallBack(HighScoreCallBack highScoreCallBack) {
         this.highScoreCallBack = highScoreCallBack;
+    }
+
+    public void setCoordinateCallBack(CoordinateCallBack coordinateCallBack) {
+        this.coordinateCallBack = coordinateCallBack;
+    }
+
+    public ArrayList<HighScore> getHighScores() {
+        return highScores;
     }
 
     @NonNull
@@ -61,8 +72,9 @@ public class HighscoreAdapter extends  RecyclerView.Adapter<HighscoreAdapter.Hig
             highScore_LBL_title = itemView.findViewById(R.id.highScore_LBL_title);
             highScore_LBL_score = itemView.findViewById(R.id.highScore_LBL_score);
             itemView.setOnClickListener(view -> {
-                if(highScoreCallBack != null)
+                if(highScoreCallBack != null) {
                     highScoreCallBack.itemClicked(getItem(getAbsoluteAdapterPosition()), getAbsoluteAdapterPosition());
+                }
             });
         }
     }

@@ -1,17 +1,17 @@
 package com.example.exs1.Fregmants;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.exs1.Adapters.HighscoreAdapter;
+import com.example.exs1.Interfaces.CoordinateCallBack;
 import com.example.exs1.Interfaces.HighScoreCallBack;
 import com.example.exs1.Models.HighScore;
 import com.example.exs1.R;
@@ -21,8 +21,7 @@ import com.example.exs1.Utilities.SignalGen;
 public class ListFragment extends Fragment {
 
     private RecyclerView highScore_LST_players;
-    private HighScoreCallBack highScoreCallBack;
-
+    private CoordinateCallBack coordinateCallBack;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -41,12 +40,15 @@ public class ListFragment extends Fragment {
             @Override
             public void itemClicked(HighScore highScore, int position) {
                 SignalGen.getInstance().toast(highScore.getRankTitle(), Toast.LENGTH_SHORT);
+                coordinateCallBack.itemClicked(highScore,position);
             }
         });
 
     }
 
-    public void setHighScoreCallBack(HighScoreCallBack callBack_send) {
-        this.highScoreCallBack=callBack_send;
+
+    public void setCoordinateCallBack(CoordinateCallBack coordinateCallBack)
+    {
+        this.coordinateCallBack=coordinateCallBack;
     }
 }

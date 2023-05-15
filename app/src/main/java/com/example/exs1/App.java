@@ -7,15 +7,13 @@ import com.example.exs1.Utilities.SignalGen;
 
 
 public class App extends Application {
-
-
-
         @Override
 
         public void onCreate() {
             super.onCreate();
             SignalGen.init(this);
             MySP.init(this);
+            //MySP.getInstance().claerData();
         }
     }
 

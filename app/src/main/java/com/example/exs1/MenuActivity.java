@@ -72,6 +72,7 @@ public class MenuActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
     private void openGameScreen() {
         Intent myIntent = new Intent(this, MainActivity.class);

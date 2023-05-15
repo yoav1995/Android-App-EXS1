@@ -2,24 +2,26 @@ package com.example.exs1.Models;
 
 public class HighScore {
     private String rankTitle="";
-    //private double lat,lng;
+    private double lat,lng;
 
-    /*public double getLat() {
+    public double getLat() {
         return lat;
     }
 
-    public void setLat(double lat) {
+    public HighScore setLat(double lat) {
         this.lat = lat;
+        return this;
     }
 
     public double getLng() {
         return lng;
     }
 
-    public void setLng(double lng) {
+    public HighScore setLng(double lng) {
         this.lng = lng;
+        return this;
     }
-*/
+
     private int score;
 
     public HighScore() {
@@ -47,6 +49,8 @@ public class HighScore {
     public String toString() {
         return "HighScore{" +
                 "rankTitle='" + rankTitle + '\'' +
+                ", lat=" + lat +
+                ", lng=" + lng +
                 ", score=" + score +
                 '}';
     }
